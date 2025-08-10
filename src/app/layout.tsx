@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Cairo, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
+const cairo = Cairo({
   variable: "--font-geist-sans",
-  subsets: ["latin"],
+  subsets: ["latin", "arabic"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${cairo.variable} ${geistMono.variable} antialiased font-sans`}
       >
         {children}
       </body>
