@@ -1,41 +1,77 @@
 "use client";
-import { Link } from "@/i18n/navigation";
+import { Link, usePathname } from "@/i18n/navigation";
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { usePathname } from "next/navigation";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { Globe, Moon, Store, Sun } from "lucide-react";
 
-
 export default function Header() {
-    const pathname = usePathname();
-    const locale = useLocale();
-    return (
-        <header className="flex justify-between items-center p-4 bg-background border-b-1 border-primary backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-lg ">
-            <div className="flex gap-2">
-                <Image src="/images/logo.png" alt="Logo" width={50} height={50} />
-                <h1 className="text-xl font-bold text-primary dark:text-primary-foreground">Opra<br/>Solutions</h1>
-            </div>
-            <nav className="flex gap-4">
-                    <Link href="/" className={`text-foreground dark:text-primary-foreground hover:text-primary/80 ${pathname === `/${locale}` ? "text-primary dark:text-foreground  font-bold" : ""}`}>Home</Link>
-                <Link href="/about" className={`text-foreground dark:text-primary-foreground hover:text-primary/80 ${pathname === `/${locale}/about` ? "text-primary dark:text-foreground  font-bold" : ""}`}>About</Link>
-                <Link href="/contact" className={`text-foreground dark:text-primary-foreground hover:text-primary/80 ${pathname === `/${locale}/contact` ? "text-primary dark:text-foreground  font-bold" : ""}`}>Contact</Link>
-                <Link href="/contact" className={`text-foreground dark:text-primary-foreground hover:text-primary/80 ${pathname === `/${locale}/contact` ? "text-primary dark:text-foreground  font-bold" : ""}`}>Contact</Link>
-            </nav>
-            <div className="flex">
-                <Button variant="outline" className="cursor-pointer">
-                    <Store className="cursor-pointer"/>
-                </Button>
-                <Button variant="outline" className="cursor-pointer" onClick={() => {
-                    document.documentElement.classList.toggle("dark");
-                }}>
-                    <Sun  className="cursor-pointer hidden dark:block"/>
-                    <Moon  className="cursor-pointer dark:hidden" />
-                </Button>
-                <Button variant="outline" className="cursor-pointer">
-                    <Globe />
-                </Button>
-            </div>
-        </header>
-    );
+  const pathname = usePathname();
+  const locale = useLocale();
+  const otherLocale = locale === "ar" ? "en" : "ar";
+  const t = useTranslations("Nav");
+
+  return (
+    <header className="flex justify-between items-center p-4  border-b border-border backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-lg">
+      <div className="flex items-center gap-3">
+        <Image src="/images/logo.png" alt="Logo" width={40} height={40} />
+        <span className="text-lg font-semibold tracking-tight">
+          Opra <span className="text-primary">Solutions</span>
+        </span>
+      </div>
+      <nav className="flex gap-4">
+        <Link
+          href="/"
+          className={`text-foreground hover:text-primary/80 ${pathname === `/${locale}` ? "text-primary font-semibold" : ""}`}
+        >
+          {t("home")}
+        </Link>
+        <Link
+          href="/about"
+          className={`text-foreground hover:text-primary/80 ${pathname === `/${locale}/about` ? "text-primary font-semibold" : ""}`}
+        >
+          {t("about")}
+        </Link>
+        <Link
+          href="/services"
+          className={`text-foreground hover:text-primary/80 ${pathname === `/${locale}/services` ? "text-primary font-semibold" : ""}`}
+        >
+          {t("services")}
+        </Link>
+        <Link
+          href="/solutions"
+          className={`text-foreground hover:text-primary/80 ${pathname === `/${locale}/solutions` ? "text-primary font-semibold" : ""}`}
+        >
+          {t("solutions")}
+        </Link>
+        <Link
+          href="/contact"
+          className={`text-foreground hover:text-primary/80 ${pathname === `/${locale}/contact` ? "text-primary font-semibold" : ""}`}
+        >
+          {t("contact")}
+        </Link>
+      </nav>
+      <div className="flex gap-2">
+        <Button variant="outline" className="cursor-pointer" aria-label="Store">
+          <Store />
+        </Button>
+        <Button
+          variant="outline"
+          className="cursor-pointer"
+          aria-label="Toggle theme"
+          onClick={() => {
+            document.documentElement.classList.toggle("dark");
+          }}
+        >
+          <Sun className="hidden dark:block" />
+          <Moon className="dark:hidden" />
+        </Button>
+        <Link href={pathname} locale={otherLocale} className="inline-flex">
+          <Button variant="outline" className="cursor-pointer" aria-label="Switch locale">
+            <Globe />
+          </Button>
+        </Link>
+      </div>
+    </header>
+  );
 }

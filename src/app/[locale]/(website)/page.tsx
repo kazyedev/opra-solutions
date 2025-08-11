@@ -1,9 +1,17 @@
-import { useTranslations } from "next-intl";
 import HeroSection from "@/sections/HeroSection";
+import OurServices from "@/sections/OurServices";
+import OurSolutions from "@/sections/OurSolutions";
+import OurPartners from "@/sections/OurPartners";
+import WhyOpra from "@/sections/WhyOpra";
 
 export default function Home() {
-  const t = useTranslations('HomePage');
   return (
-    <HeroSection />
+    <>
+      <HeroSection />
+      <OurServices />
+      <OurSolutions />
+      <OurPartners />
+      <WhyOpra />
+    </>
   );
 }

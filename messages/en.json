@@ -1,6 +1,188 @@
 {
+  "Nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "solutions": "Solutions",
+    "contact": "Contact"
+  },
     "HomePage": {
-      "title": "Hello world!",
-      "about": "Go to the about page"
+    "hero": {
+      "title": "Empowering Digital Infrastructure",
+      "subtitle": "Networking, datacenters, video walls and more — delivered with excellence.",
+      "ctaPrimary": "Get in touch",
+      "ctaSecondary": "Explore solutions"
+    },
+    "cta": "Get in touch"
+  },
+  "Company": {
+    "welcomeTitle": "Welcome To Our Company",
+    "welcomeBody": "We recognize that no two businesses are alike and offer customized solutions that respond to specific operating needs. Our systems are scalable, providing the latest technology for today’s needs, with a growth path for future expansion. We lead the industry in customer service, offering support for all Voice, Video and Data hardware services with highly trained staff.",
+    "visionTitle": "Vision",
+    "visionBody": "To be a global leader in the communication and networking industry, recognized for excellence, innovation, and customer satisfaction—revolutionizing how businesses connect and communicate.",
+    "missionTitle": "Mission",
+    "missionBody": "To empower businesses with innovative communication and networking solutions, providing exceptional service and support to enhance efficiency, productivity, and growth. We deliver tailored, cutting-edge technology for seamless, reliable connectivity."
+  },
+  "WhyOpra": {
+    "title": "Why Opra Solutions?",
+    "summary": "Opra Solutions provides flexible integration solutions for contact centers, networking and datacenters, backed by a seasoned team and strong technology partnerships.",
+    "bullets": [
+      "Flexible integration across contact centers, networking, and datacenters",
+      "Mature breadth of integration expertise",
+      "Backed by proven technology and service partners",
+      "Full lifecycle services: consulting, implementation, training, support",
+      "Local representatives and senior engineers with deep market experience"
+    ]
+  },
+  "Solutions": {
+    "title": "Our Solutions",
+    "list": [
+      "Accounting Systems",
+      "CRM",
+      "Helpdesk Software",
+      "HR Management",
+      "Custom Systems tailored to your business needs",
+      "Mobile & Web Apps"
+    ],
+    "items": [
+      {"title": "CRM", "desc": "Manage pipelines, relationships, and communications in one place."},
+      {"title": "Accounting Systems", "desc": "Financials, invoicing, and insightful reporting for growth."},
+      {"title": "Helpdesk Software", "desc": "Ticketing and SLA-driven support workflows to delight users."},
+      {"title": "HR Management", "desc": "Payroll, attendance, and employee records—secure and compliant."},
+      {"title": "Custom Systems tailored to your business needs", "desc": "Built-to-fit systems that integrate with your stack and processes."},
+      {"title": "Mobile & Web Apps", "desc": "Cross-platform applications that are fast, secure, and scalable."}
+    ]
+  },
+  "Services": {
+    "title": "Our Services",
+    "list": [
+      "Networking",
+      "Civil Work",
+      "CCTV",
+      "Professional Services",
+      "Data Center",
+      "Data Storage",
+      "Security",
+      "Hosting"
+    ],
+    "items": [
+      {"title": "Networking", "desc": "Enterprise LAN/WAN/Wi‑Fi design, deployment, and optimization."},
+      {"title": "Civil Work", "desc": "Cabling, routing, racks, and site preparation with best practices."},
+      {"title": "CCTV", "desc": "Surveillance design, installation, and centralized monitoring."},
+      {"title": "Professional Services", "desc": "Consulting, integration, training, and ongoing support."},
+      {"title": "Data Center", "desc": "Compute, switching, power, and cooling for resilient operations."},
+      {"title": "Data Storage", "desc": "Backup, disaster recovery, SAN/NAS, and lifecycle management."},
+      {"title": "Security", "desc": "Firewalls, VPN, endpoint, and identity protection solutions."},
+      {"title": "Hosting", "desc": "Cloud and on‑prem hosting with performance and reliability."}
+    ]
+  },
+  "TechPartners": {
+    "title": "Our Technology & Partners",
+    "products": {
+      "Telephony Systems": [
+        "IPO Editions",
+        "Mobility",
+        "IX Workplace",
+        "Conferencing",
+        "End Points / Devices",
+        "Collaboration"
+      ],
+      "UC": [
+        "Omni Channels",
+        "ACR",
+        "ACCS",
+        "Workspace"
+      ],
+      "Value-Add Apps": [
+        "Social Media / Chatbot",
+        "3rd Party Integration",
+        "Survey",
+        "Call Back",
+        "SMS",
+        "Auto Dialer",
+        "Case Management"
+      ]
+    },
+    "brands": [
+      "Avaya",
+      "Cisco",
+      "Huawei",
+      "xFusion",
+      "Zoom",
+      "Fortinet",
+      "HP",
+      "DTEN",
+      "Dell",
+      "Aruba",
+      "Microsoft",
+      "CH",
+      "Absen",
+      "Eaton",
+      "Aten",
+      "Samsung",
+      "Dahua",
+      "3M",
+      "Vertiv",
+      "Hikvision",
+      "Perfect Pic"
+    ]
+  },
+  "VideoCollaboration": {
+    "title": "Video Collaboration",
+    "body": "DTEN is an award-winning provider of powerful, easy-to-use video meeting devices and an exclusive hardware partner for Zoom.",
+    "bullets": [
+      "All-in-one, cutting-edge devices",
+      "Flexible, scalable, and affordable",
+      "Always Zoom ready",
+      "Interactive and immersive collaboration",
+      "DTEN Audio AI with noise reduction and echo cancellation",
+      "Smart camera with auto-framing",
+      "Built-in cameras, speakers, mics, OS, and whiteboard in a multi-touch display",
+      "Easy deployment and management via DTEN Orbit or DTEN OS",
+      "Built-in Zoom collaboration software",
+      "Ultra-responsive 4K & HD multi-touch displays",
+      "Whiteboarding and real-time annotation"
+    ]
+  },
+  "VideoWall": {
+    "title": "Video Wall",
+    "body": "Cutting-edge Video Wall Systems for impactful visual communication and real-time data display across control rooms, corporate environments, public venues, and retail spaces.",
+    "bullets": [
+      "Seamless high-definition displays",
+      "Custom configurations for any space",
+      "Centralized content control and real-time updates",
+      "24/7 reliability for mission-critical environments"
+    ]
+  },
+  "NetworkCabling": {
+    "title": "Network & Cabling",
+    "body": "We collaborate with leading companies to deliver top-notch cabling and networking solutions, backed by a professional team committed to excellence."
+  },
+  "AccessControls": {
+    "title": "Access Controls & Smart Gates",
+    "body": "Take control of your space with smart access solutions designed to protect, monitor, and streamline entry—ideal for offices, buildings, and gated facilities.",
+    "bullets": [
+      "Biometric and card access",
+      "Real-time monitoring",
+      "Visitor and gate management"
+    ]
+  },
+  "NetworkDatacenter": {
+    "title": "Network & Datacenter",
+    "body": "We provide comprehensive networking and data center products—switches, routers, access points, servers—plus VPN and firewall solutions with partners like Fortinet, Huawei, Cisco, and Xfusion."
+  },
+  "Clients": {
+    "title": "Some of Our Clients",
+    "subtitle": "Over 100+ companies have trusted us as their partner for growth."
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "phone": "00966 507746779",
+    "website": "https://oprasolutions.com/",
+    "address": "King Abdulaziz Road | King Fahd Dist | Building No.8246 Office No.24 P.O. Box: 12274 Riyadh: 3988 K.S.A",
+    "emails": {
+      "aziz": "aziz@oprasolutions.com",
+      "sales": "sales@oprasolutions.com"
+    }
     }
   }
