@@ -221,5 +221,18 @@
     "location": {
       "title": "Our Location"
     }
+  ,
+  "Store": {
+    "title": "Introducing Opra Store",
+    "subtitle": "Enterprise-grade IT hardware and collaboration devices curated by our experts.",
+    "cta": "Visit store",
+    "badges": [
+      "Networking gear",
+      "Security & firewalls",
+      "Video & collaboration",
+      "Servers & storage",
+      "Cabling & accessories"
+    ]
+  }
     }
   }

@@ -5,6 +5,7 @@ import OurPartners from "@/sections/OurPartners";
 import WhyOpra from "@/sections/WhyOpra";
 import OurClients from "@/sections/OurClients";
 import ContactSection from "@/sections/ContactSection";
+import StorePromo from "@/sections/StorePromo";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <OurPartners />
       <OurClients />
       <WhyOpra />
+      <StorePromo />
       <ContactSection />
 
     </>
