@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import DataFlowBackground from "@/components/DataFlowBackground";
 
 export const metadata: Metadata = {
   title: "Opra Solutions",
@@ -14,6 +15,7 @@ export default async function WebsiteLayout({
 }>) {
   return (
     <>
+      <DataFlowBackground />
       <Header />
       <main className="flex-1 pt-20">{children}</main>
       <Footer />

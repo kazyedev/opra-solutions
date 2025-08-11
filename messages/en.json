@@ -173,7 +173,32 @@
   },
   "Clients": {
     "title": "Some of Our Clients",
-    "subtitle": "Over 100+ companies have trusted us as their partner for growth."
+    "subtitle": "Over 100+ companies have trusted us as their partner for growth.",
+    "list": [
+      "Ministry of Health",
+      "KACST",
+      "Al Fozan Group",
+      "Al Khaleej Training & Education",
+      "Dar Afia Health Care",
+      "Dussmann Ajlan & Bros",
+      "Security Forces Hospital Riyadh",
+      "Chedid Re",
+      "Al Hayat Hospital",
+      "Jeraisy Group",
+      "Almanea",
+      "YASREF",
+      "Elajou",
+      "Tamimi Markets",
+      "General Directorate of Public Security",
+      "Almoosa Health",
+      "Ministry of Human Resources & Social Development",
+      "ARCOM",
+      "Hadhramout Bank",
+      "ONE",
+      "Al-Esnad",
+      "Sahab",
+      "OSP"
+    ]
   },
   "Contact": {
     "title": "Contact Us",
@@ -183,6 +208,18 @@
     "emails": {
       "aziz": "aziz@oprasolutions.com",
       "sales": "sales@oprasolutions.com"
+    },
+    "form": {
+      "title": "Get in touch",
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Your message",
+      "submit": "Send message",
+      "success": "Thanks! We'll get back to you shortly."
+    },
+    "location": {
+      "title": "Our Location"
     }
     }
   }
