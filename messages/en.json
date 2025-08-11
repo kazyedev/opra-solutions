@@ -6,7 +6,7 @@
     "solutions": "Solutions",
     "contact": "Contact"
   },
-    "HomePage": {
+  "HomePage": {
     "hero": {
       "title": "Empowering Digital Infrastructure",
       "subtitle": "Networking, datacenters, video walls and more — delivered with excellence.",
@@ -45,12 +45,30 @@
       "Mobile & Web Apps"
     ],
     "items": [
-      {"title": "CRM", "desc": "Manage pipelines, relationships, and communications in one place."},
-      {"title": "Accounting Systems", "desc": "Financials, invoicing, and insightful reporting for growth."},
-      {"title": "Helpdesk Software", "desc": "Ticketing and SLA-driven support workflows to delight users."},
-      {"title": "HR Management", "desc": "Payroll, attendance, and employee records—secure and compliant."},
-      {"title": "Custom Systems tailored to your business needs", "desc": "Built-to-fit systems that integrate with your stack and processes."},
-      {"title": "Mobile & Web Apps", "desc": "Cross-platform applications that are fast, secure, and scalable."}
+      {
+        "title": "CRM",
+        "desc": "Manage pipelines, relationships, and communications in one place."
+      },
+      {
+        "title": "Accounting Systems",
+        "desc": "Financials, invoicing, and insightful reporting for growth."
+      },
+      {
+        "title": "Helpdesk Software",
+        "desc": "Ticketing and SLA-driven support workflows to delight users."
+      },
+      {
+        "title": "HR Management",
+        "desc": "Payroll, attendance, and employee records—secure and compliant."
+      },
+      {
+        "title": "Custom Systems tailored to your business needs",
+        "desc": "Built-to-fit systems that integrate with your stack and processes."
+      },
+      {
+        "title": "Mobile & Web Apps",
+        "desc": "Cross-platform applications that are fast, secure, and scalable."
+      }
     ]
   },
   "Services": {
@@ -66,14 +84,38 @@
       "Hosting"
     ],
     "items": [
-      {"title": "Networking", "desc": "Enterprise LAN/WAN/Wi‑Fi design, deployment, and optimization."},
-      {"title": "Civil Work", "desc": "Cabling, routing, racks, and site preparation with best practices."},
-      {"title": "CCTV", "desc": "Surveillance design, installation, and centralized monitoring."},
-      {"title": "Professional Services", "desc": "Consulting, integration, training, and ongoing support."},
-      {"title": "Data Center", "desc": "Compute, switching, power, and cooling for resilient operations."},
-      {"title": "Data Storage", "desc": "Backup, disaster recovery, SAN/NAS, and lifecycle management."},
-      {"title": "Security", "desc": "Firewalls, VPN, endpoint, and identity protection solutions."},
-      {"title": "Hosting", "desc": "Cloud and on‑prem hosting with performance and reliability."}
+      {
+        "title": "Networking",
+        "desc": "Enterprise LAN/WAN/Wi‑Fi design, deployment, and optimization."
+      },
+      {
+        "title": "Civil Work",
+        "desc": "Cabling, routing, racks, and site preparation with best practices."
+      },
+      {
+        "title": "CCTV",
+        "desc": "Surveillance design, installation, and centralized monitoring."
+      },
+      {
+        "title": "Professional Services",
+        "desc": "Consulting, integration, training, and ongoing support."
+      },
+      {
+        "title": "Data Center",
+        "desc": "Compute, switching, power, and cooling for resilient operations."
+      },
+      {
+        "title": "Data Storage",
+        "desc": "Backup, disaster recovery, SAN/NAS, and lifecycle management."
+      },
+      {
+        "title": "Security",
+        "desc": "Firewalls, VPN, endpoint, and identity protection solutions."
+      },
+      {
+        "title": "Hosting",
+        "desc": "Cloud and on‑prem hosting with performance and reliability."
+      }
     ]
   },
   "TechPartners": {
@@ -127,6 +169,43 @@
       "Perfect Pic"
     ]
   },
+  "Telephony": {
+    "title": "Telephony Systems",
+    "subtitle": "Avaya IP Office capabilities",
+    "features": [
+      "Artificial Intelligence",
+      "ACCS",
+      "Call Recording",
+      "High Availability",
+      "Multi-Site Networking",
+      "Cloud",
+      "Contact Center",
+      "Video Conferencing",
+      "Devices",
+      "Mobility",
+      "Development Kit",
+      "Up to 3000 users"
+    ]
+  },
+  "ValueAdd": {
+    "title": "Value-Add Applications",
+    "subtitle": "Avaya & Partner Services",
+    "apps": [
+      "Outbound Dialer",
+      "WhatsApp Connector",
+      "Click To Call",
+      "Social Media Connector",
+      "CRM Connector",
+      "Case Management",
+      "Customer Engagement Portal",
+      "Customer Survey",
+      "FAQ-Based Chatbot",
+      "SMS Module",
+      "Callback Manager",
+      "Call Budgeting",
+      "Call Billing"
+    ]
+  },
   "VideoCollaboration": {
     "title": "Video Collaboration",
     "body": "DTEN is an award-winning provider of powerful, easy-to-use video meeting devices and an exclusive hardware partner for Zoom.",
@@ -142,6 +221,14 @@
       "Built-in Zoom collaboration software",
       "Ultra-responsive 4K & HD multi-touch displays",
       "Whiteboarding and real-time annotation"
+    ],
+    "portfolio": [
+      "D7 55\"/75\" (Windows IoT)",
+      "D7 Dual 55\"/75\"",
+      "D7 X 55\"/75\" (NEW)",
+      "ME Pro 27\" with Smart Connect",
+      "GO with Mate (Smart Connect)",
+      "DTEN Mate with DTEN Dock (NEW)"
     ]
   },
   "VideoWall": {
@@ -156,7 +243,13 @@
   },
   "NetworkCabling": {
     "title": "Network & Cabling",
-    "body": "We collaborate with leading companies to deliver top-notch cabling and networking solutions, backed by a professional team committed to excellence."
+    "body": "We collaborate with leading companies to deliver top-notch cabling and networking solutions, backed by a professional team committed to excellence.",
+    "highlights": [
+      "Structured cabling (Cat6/Cat6A)",
+      "Fiber optic splicing & termination",
+      "Racks, patch panels & labeling",
+      "Testing, certification & documentation"
+    ]
   },
   "AccessControls": {
     "title": "Access Controls & Smart Gates",
@@ -169,35 +262,107 @@
   },
   "NetworkDatacenter": {
     "title": "Network & Datacenter",
-    "body": "We provide comprehensive networking and data center products—switches, routers, access points, servers—plus VPN and firewall solutions with partners like Fortinet, Huawei, Cisco, and Xfusion."
+    "body": "We provide comprehensive networking and data center products—switches, routers, access points, servers—plus VPN and firewall solutions with partners like Fortinet, Huawei, Cisco, and Xfusion.",
+    "highlights": [
+      "Switches, routers, and access points",
+      "Servers and virtualization",
+      "VPN solutions and firewalls",
+      "Partner ecosystem: Huawei, Cisco, Fortinet, Xfusion"
+    ]
   },
   "Clients": {
     "title": "Some of Our Clients",
     "subtitle": "Over 100+ companies have trusted us as their partner for growth.",
     "list": [
-      "Ministry of Health",
-      "KACST",
-      "Al Fozan Group",
-      "Al Khaleej Training & Education",
-      "Dar Afia Health Care",
-      "Dussmann Ajlan & Bros",
-      "Security Forces Hospital Riyadh",
-      "Chedid Re",
-      "Al Hayat Hospital",
-      "Jeraisy Group",
-      "Almanea",
-      "YASREF",
-      "Elajou",
-      "Tamimi Markets",
-      "General Directorate of Public Security",
-      "Almoosa Health",
-      "Ministry of Human Resources & Social Development",
-      "ARCOM",
-      "Hadhramout Bank",
-      "ONE",
-      "Al-Esnad",
-      "Sahab",
-      "OSP"
+      {
+        "name": "Ministry of Health",
+        "image": "/images/clients/ministry-of-health.svg"
+      },
+      {
+            "name": "KACST",
+        "image": "/images/clients/kacst.svg"
+      },
+      {
+        "name": "Al Fozan Group",
+        "image": "/images/clients/al-fozan-group.png"
+      },
+      {
+        "name": "Al Khaleej Training & Education",
+        "image": "/images/clients/al-khaleej-training-education.png"
+      },
+      {
+        "name": "Dar Afia Health Care",
+        "image": "/images/clients/dar-afia-health-care.png"
+      },
+      {
+        "name": "Dussmann Ajlan & Bros",
+        "image": "/images/clients/dussmann-ajlan-bros.svg"
+      },
+      {
+        "name": "Security Forces Hospital Riyadh",
+        "image": "/images/clients/security-forces-hospital-riyadh.png"
+      },
+      {
+        "name": "Chedid Re",
+        "image": "/images/clients/chedid-re.avif"
+      },
+      {
+        "name": "Al Hayat Hospital",
+        "image": "/images/clients/al-hayat-hospital.png"
+      },
+      {
+        "name": "Jeraisy Group",
+        "image": "/images/clients/jeraisy-group.png"
+      },
+      {
+        "name": "Almanea",
+        "image": "/images/clients/almanea.png"
+      },
+      {
+        "name": "General Directorate of Public Security",
+        "image": "/images/clients/general-directorate-of-public-security.png"
+      },
+      {
+        "name": "Tamimi Markets",
+        "image": "/images/clients/tamimi-markets.png"
+      },
+
+      {
+        "name": "Almoosa Health",
+        "image": "/images/clients/almoosa-health.webp"
+      },
+      {
+        "name": "Ministry of Human Resources & Social Development",
+        "image": "/images/clients/ministry-of-human-resources-social-development-en.png"
+      },
+      {
+        "name": "ARCOM",
+        "image": "/images/clients/arcom.png"
+      },
+      {
+        "name": "Hadhramout Bank",
+        "image": "/images/clients/hadhramout-bank.png"
+      },
+      {
+        "name": "ONE CASH",
+        "image": "/images/clients/one-cash.svg"
+      },
+      {
+        "name": "Al-Esnad",
+        "image": "/images/clients/al-esnad.png"
+      },
+      {
+        "name": "King Abdulaziz Complex for Endowment Libraries",
+        "image": "/images/clients/kawta.png"
+      },
+      {
+        "name": "SAHAB",
+        "image": "/images/clients/sahab.png"
+      },
+      {
+        "name": "Oil Sustainability Program",
+        "image": "/images/clients/osp.png"
+      }
     ]
   },
   "Contact": {
@@ -221,7 +386,7 @@
     "location": {
       "title": "Our Location"
     }
-  ,
+  },
   "Store": {
     "title": "Introducing Opra Store",
     "subtitle": "Enterprise-grade IT hardware and collaboration devices curated by our experts.",
@@ -233,6 +398,24 @@
       "Servers & storage",
       "Cabling & accessories"
     ]
+  },
+  "Legal": {
+    "privacyTitle": "Privacy Policy",
+    "privacyIntro": "We value your privacy. This policy explains what data we collect, how we use it, and your rights.",
+    "dataCollectionTitle": "Data We Collect",
+    "dataCollectionBody": "We may collect contact information you provide (such as name, email, phone) and basic usage information.",
+    "usageTitle": "How We Use Data",
+    "usageBody": "We use your information to respond to inquiries, provide services, and improve our website.",
+    "contactTitle": "Contact",
+    "contactBody": "If you have any questions about this policy, please contact us at sales@oprasolutions.com.",
+
+    "termsTitle": "Terms of Service",
+    "termsIntro": "By accessing or using our website, you agree to these Terms of Service.",
+    "useOfSiteTitle": "Use of the Site",
+    "useOfSiteBody": "You agree not to misuse the website or interfere with its normal operation.",
+    "liabilityTitle": "Limitation of Liability",
+    "liabilityBody": "We are not liable for any indirect or consequential damages arising from use of the site.",
+    "governingLawTitle": "Governing Law",
+    "governingLawBody": "These terms are governed by the laws of the Kingdom of Saudi Arabia."
   }
-    }
-  }
+}

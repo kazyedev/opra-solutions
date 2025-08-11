@@ -7,6 +7,8 @@ import { useMemo, useState } from "react";
 export default function ContactSection() {
   const t = useTranslations("Contact");
   const [sent, setSent] = useState(false);
+  const phoneRaw = t("phone") as string;
+  const telHref = `tel:${phoneRaw.replace(/\s+/g, '').replace(/^00/, '+')}`;
   const address = t("address") as string;
   const mapSrc = useMemo(() => {
     const encoded = encodeURIComponent(address);
@@ -30,10 +32,10 @@ export default function ContactSection() {
         {/* Contact details and form */}
         <div className="space-y-5">
           <div className="rounded-lg border border-border bg-card p-5">
-            <div className="flex items-center gap-3 mb-3">
+            <a className="flex items-center gap-3 mb-3 hover:text-primary" href={telHref}>
               <Phone className="text-primary" />
-              <span>{t("phone")}</span>
-            </div>
+              <span>{phoneRaw}</span>
+            </a>
             <div className="flex items-center gap-3 mb-3">
               <Mail className="text-primary" />
               <div className="flex flex-col">

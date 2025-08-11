@@ -7,6 +7,8 @@ import { useTranslations } from "next-intl";
 export default function Footer() {
   const tNav = useTranslations("Nav");
   const tContact = useTranslations("Contact");
+  const phoneRaw = tContact("phone") as string;
+  const phoneHref = `tel:${phoneRaw.replace(/\s+/g, '').replace(/^00/, '+')}`;
 
   return (
     <footer className="mt-16 border-t border-border bg-secondary/30 text-sm">
@@ -51,10 +53,10 @@ export default function Footer() {
 
         {/* Contact */}
         <div className="grid gap-3 content-start">
-          <div className="flex items-center gap-2">
+          <a className="flex items-center gap-2 hover:text-primary" href={phoneHref}>
             <Phone className="text-primary" size={16} />
-            <span>{tContact("phone")}</span>
-          </div>
+            <span>{phoneRaw}</span>
+          </a>
           <div className="flex items-center gap-2">
             <Mail className="text-primary" size={16} />
             <div className="flex flex-col">
@@ -73,8 +75,8 @@ export default function Footer() {
         <div className="mx-auto w-full max-w-[1280px] px-6 py-4 flex flex-col gap-2 md:flex-row md:items-center md:justify-between text-muted-foreground">
           <p>© {new Date().getFullYear()} Opra Solutions. All rights reserved.</p>
           <div className="flex gap-4">
-            <a className="hover:text-primary" href="#">Privacy</a>
-            <a className="hover:text-primary" href="#">Terms</a>
+            <Link className="hover:text-primary" href="/privacy">Privacy</Link>
+            <Link className="hover:text-primary" href="/terms">Terms</Link>
           </div>
         </div>
       </div>

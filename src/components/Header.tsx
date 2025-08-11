@@ -52,9 +52,11 @@ export default function Header() {
         </Link>
       </nav>
       <div className="flex gap-2">
-        <Button variant="outline" className="cursor-pointer" aria-label="Store">
-          <Store />
-        </Button>
+        <Link href="/store" className="inline-flex">
+          <Button variant="outline" className="cursor-pointer" aria-label="Store">
+            <Store />
+          </Button>
+        </Link>
         <Button
           variant="outline"
           className="cursor-pointer"
