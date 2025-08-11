@@ -1,0 +1,130 @@
+{
+    "project": "Opra Solutions Web Application",
+    "framework": "Next.js 15",
+    "language": "TypeScript",
+    "styling": "TailwindCSS 4",
+    "theme": {
+      "modes": ["light", "dark"],
+      "colors": {
+        "primary": {
+          "light": "#2563eb",
+          "dark": "#3b82f6"
+        },
+        "secondary": {
+          "light": "#f97316",
+          "dark": "#fb923c"
+        },
+        "background": {
+          "light": "#ffffff",
+          "dark": "#0f172a"
+        },
+        "text": {
+          "light": "#1e293b",
+          "dark": "#f1f5f9"
+        },
+        "accent": {
+          "light": "#06b6d4",
+          "dark": "#22d3ee"
+        },
+        "muted": {
+          "light": "#94a3b8",
+          "dark": "#64748b"
+        }
+      },
+      "borderRadius": {
+        "sm": "0.375rem",
+        "md": "0.5rem",
+        "lg": "0.75rem",
+        "xl": "1rem",
+        "2xl": "1.5rem"
+      },
+      "shadows": {
+        "card": "0 4px 14px rgba(0, 0, 0, 0.1)",
+        "hover": "0 6px 20px rgba(0, 0, 0, 0.15)"
+      }
+    },
+    "typography": {
+      "fontFamily": {
+        "heading": "Inter, sans-serif",
+        "body": "Inter, sans-serif"
+      },
+      "fontWeight": {
+        "light": 300,
+        "normal": 400,
+        "medium": 500,
+        "semibold": 600,
+        "bold": 700
+      },
+      "sizes": {
+        "xs": "0.75rem",
+        "sm": "0.875rem",
+        "base": "1rem",
+        "lg": "1.125rem",
+        "xl": "1.25rem",
+        "2xl": "1.5rem",
+        "3xl": "1.875rem",
+        "4xl": "2.25rem"
+      },
+      "lineHeight": {
+        "tight": 1.2,
+        "snug": 1.35,
+        "normal": 1.5,
+        "relaxed": 1.625
+      }
+    },
+    "components": {
+      "button": {
+        "base": "inline-flex items-center justify-center font-medium rounded-lg transition-all duration-200",
+        "variants": {
+          "primary": "bg-primary-light text-white hover:bg-primary-dark dark:bg-primary-dark dark:hover:bg-primary-light",
+          "secondary": "bg-secondary-light text-white hover:bg-secondary-dark dark:bg-secondary-dark dark:hover:bg-secondary-light",
+          "outline": "border border-primary-light text-primary-light hover:bg-primary-light hover:text-white dark:border-primary-dark dark:text-primary-dark dark:hover:bg-primary-dark dark:hover:text-white"
+        },
+        "sizes": {
+          "sm": "px-3 py-1.5 text-sm",
+          "md": "px-4 py-2 text-base",
+          "lg": "px-6 py-3 text-lg"
+        }
+      },
+      "card": {
+        "base": "bg-white dark:bg-slate-900 rounded-xl shadow-card p-6 transition-transform hover:scale-105 hover:shadow-hover",
+        "header": "text-xl font-semibold mb-2",
+        "body": "text-base text-muted-light dark:text-muted-dark"
+      },
+      "navbar": {
+        "base": "fixed top-0 left-0 w-full flex items-center justify-between px-6 py-4 backdrop-blur-md transition-all z-50",
+        "scrolled": "shadow-md bg-white/80 dark:bg-slate-900/80",
+        "link": "px-3 py-2 text-sm font-medium hover:text-primary-light dark:hover:text-primary-dark transition-colors"
+      },
+      "footer": {
+        "base": "bg-slate-100 dark:bg-slate-950 text-sm text-muted-light dark:text-muted-dark px-6 py-8",
+        "link": "hover:text-primary-light dark:hover:text-primary-dark transition-colors"
+      }
+    },
+    "animations": {
+      "framework": "framer-motion",
+      "pageTransition": {
+        "type": "fade",
+        "duration": 0.3
+      },
+      "revealOnScroll": {
+        "direction": "up",
+        "distance": 50,
+        "duration": 0.6,
+        "stagger": 0.15
+      },
+      "hoverEffects": {
+        "scale": 1.05,
+        "shadow": "hover:shadow-hover"
+      }
+    },
+    "layout": {
+      "maxWidth": "1280px",
+      "gutter": "1.5rem",
+      "sectionsSpacing": "5rem"
+    },
+    "accessibility": {
+      "focusRing": "focus:outline-none focus:ring-2 focus:ring-primary-light focus:ring-offset-2"
+    }
+  }
+  
