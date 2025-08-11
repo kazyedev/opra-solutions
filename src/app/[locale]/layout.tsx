@@ -3,6 +3,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
 import { Cairo, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 
 const cairo = Cairo({
   variable: "--font-geist-sans",
@@ -29,6 +30,24 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <link rel="icon" href="/favicon.ico" sizes="any" />
+      <Script id="theme-init" strategy="beforeInteractive">
+        {`
+          (function(){
+            try {
+              var stored = localStorage.getItem('theme');
+              var root = document.documentElement.classList;
+              if (stored === 'light') {
+                root.remove('dark');
+              } else if (stored === 'dark') {
+                root.add('dark');
+              } else {
+                // default to dark when not set
+                root.add('dark');
+              }
+            } catch (e) {}
+          })();
+        `}
+      </Script>
       <body
         className={`${cairo.variable} ${geistMono.variable} antialiased font-sans min-h-screen flex flex-col bg-background`}
       >

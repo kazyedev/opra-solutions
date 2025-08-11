@@ -35,10 +35,19 @@ export default function HeroSection() {
         </p>
         <div className="mt-8 flex items-center justify-center gap-3">
           <Link href="/contact">
-            <Button size="lg">{t.raw("ctaPrimary") ?? "Get in touch"}</Button>
+            <Button
+              size="lg"
+              className="cursor-pointer transition-transform hover:scale-[1.03] active:scale-95 hover:shadow-md"
+            >
+              {t.raw("ctaPrimary") ?? "Get in touch"}
+            </Button>
           </Link>
           <Link href="/solutions">
-            <Button size="lg" variant="outline">
+            <Button
+              size="lg"
+              variant="outline"
+              className="cursor-pointer transition-transform hover:scale-[1.03] active:scale-95 hover:shadow-md"
+            >
               {t.raw("ctaSecondary") ?? "Explore solutions"}
             </Button>
           </Link>
